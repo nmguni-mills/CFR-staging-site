@@ -29,16 +29,34 @@ TemplateMo 571 Hexashop
 https://templatemo.com/tm-571-hexashop
 
 -->
+
+ 
 <style>
+    .more_catagory{
+        width: 300px;
+    }
     .thumb {
     height: 350px;
     width: 350px;
+
     }
     .down-content{
         text-align: center;
     }
     #products{
 margin-top: 55px;
+    }
+
+
+    /* mobile */
+    @media screen and (max-width: 680px) {
+      .thumb{
+        width: 100%;
+        height: 100%;
+      }
+      .more_catagory{
+        width: 100%;
+    }
     }
 </style>
     </head>
@@ -128,8 +146,9 @@ margin-top: 55px;
             <div class="row">
                 <div class="col-lg-4">
                     <div class="item">
-                      <a href="/product_pages/bars.html">  <div class="thumb">
-                        <img style="height: 200px;" src="assets/images/products/bars/Bar 6ft black Oak.jpg" alt="">
+                      <a href="/product_pages/bars.html">  
+                        <div class="thumb">
+                        <img style="height: 230px;" src="assets/images/products/bars/Bar 6ft black Oak.jpg" alt="">
                     </div>
                     <div class="down-content">
                         <h4>Bars</h4> 
@@ -139,7 +158,7 @@ margin-top: 55px;
                 <div class="col-lg-4">
                     <div class="item">
                       <a href="/product_pages/sofas_bornes.html">  <div class="thumb">
-                        <img  src="assets/images/products/sofas/8 ft armed bronze Tuxedo.jpg" alt="">
+                        <img  style="height: 230px;" src="assets/images/products/sofas/8 ft armed bronze Tuxedo.jpg" alt="">
                     </div>
                     <div class="down-content">
                         <h4>Sofas/Bornes</h4> 
@@ -209,7 +228,7 @@ margin-top: 55px;
                 <div class="col-lg-4">
                     <div class="item">
                       <a href="/product_pages/more.html">  <div class="thumb">
-                        <img style="width: 300px;" src="assets/images/products/accents/Bourgie black.jpg" alt="">
+                        <img class="more_catagory"  src="assets/images/products/accents/Bourgie black.jpg" alt="">
                     </div>
                     <div class="down-content">
                         <h4>More...</h4> 
