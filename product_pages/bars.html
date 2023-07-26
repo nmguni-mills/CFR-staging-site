@@ -48,8 +48,18 @@ https://templatemo.com/tm-571-hexashop
         /* mobile */
         @media screen and (max-width: 680px) {
             .thumb {
-                width: 100%;
+                width: 250px;
                 height: 100%;
+            }
+            .col-lg-3{
+                display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+            }
+            .mobile-only {
+                width: 250px !important;
             }
 
         }
@@ -402,7 +412,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-3">
                     <div class="item">
                         <div class="thumb">
-                            <img style=" width: 150px;"
+                            <img style=" width: 150px;" class=" mobile-only"
                                 src="../assets/images/products/bars/Bar Natural_wood_square_bar.jpg" alt="">
                             <div class="down-content">
                                 <span>Natural wood square bar</span>
@@ -426,7 +436,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-3">
                     <div class="item">
                         <div class="thumb">
-                            <img style=" width: 180px;"
+                            <img style=" width: 180px;" class="mobile-only"
                                 src="../assets/images/products/bars/Bar Natural_wood_4'_bar_-_interior_shelf_included.jpg"
                                 alt="">
                             <div class="down-content">
