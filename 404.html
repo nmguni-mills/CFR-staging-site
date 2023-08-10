@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
 
-    <title>CFR - Home</title>
+    <title>404</title>
 
     <!-- Additional CSS Files -->
     <link
@@ -21,24 +21,25 @@
       type="text/css"
       href="assets/css/bootstrap.min.css"
     />
-
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
-
     <link rel="stylesheet" href="assets/css/templatemo-hexashop.css" />
-
     <link rel="stylesheet" href="assets/css/owl-carousel.css" />
-
     <link rel="stylesheet" href="assets/css/lightbox.css" />
-    <!--
 
-TemplateMo 571 Hexashop
-
-https://templatemo.com/tm-571-hexashop
-
--->
     <style>
       .info {
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+      }
+      .info-text {
+        color: black;
+        font-size: 50px;
+        text-align: center;
+        text-transform: capitalize;
       }
     </style>
   </head>
@@ -55,102 +56,16 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Preloader End ***** -->
 
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** --
-              <!-- ***** Logo End ***** -->
-              <a href="index.html" class="logo">
-                <img
-                  style="width: 120px"
-                  class="cfc-logo"
-                  src="assets/images/index/cfr-logo.png"
-                />
-              </a>
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li class="scroll-to-section">
-                  <a href="#top" class="active">Home</a>
-                </li>
-                <li class="submenu">
-                  <a href="products.html">Products</a>
-                  <ul>
-                    <li><a href="/product_pages/bars.html">Bars</a></li>
-                    <li>
-                      <a href="/product_pages/sofas_bornes.html"
-                        >Sofas/Bornes</a
-                      >
-                    </li>
-                    <li><a href="/product_pages/tables.html">Tables</a></li>
-                    <li><a href="/product_pages/cushions.html">Cushions</a></li>
-                    <li>
-                      <a href="/product_pages/chairs_barstools.html"
-                        >Chairs/Barstools</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/product_pages/benches_ottomans.html"
-                        >Benches/Ottomans</a
-                      >
-                    </li>
-                    <li><a href="/product_pages/outdoor.html">Outdoor</a></li>
-                    <!-- <li>
-                      <a href="/product_pages/new_products.html"
-                        >New Products</a
-                      >
-                    </li> -->
-                    <li><a href="/product_pages/more.html">More...</a></li>
-                  </ul>
-                </li>
-                <li class="scroll-to-section"><a href="#men">About</a></li>
-                <li class="scroll-to-section">
-                  <a href="#women">Services</a>
-                </li>
-                <li class="scroll-to-section"><a href="#kids">Contact</a></li>
 
-                <li><a href="../event_gallery.html">Event Gallery</a></li>
-              </ul>
-              <a class="menu-trigger">
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
     <!-- ***** Header Area End ***** -->
 
-    <section class="info">
-      <div>site down for maintnace</div>
-    </section>
-
-    <!-- ***** Footer Start ***** -->
-    <footer style="text-align: center; padding-bottom: 50px">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div>
-              <ul>
-                <li class="text-white">Contemporary Furniture Rentals Inc.</li>
-                <li class="text-white">A Division of Chair-Man Mills Corp.</li>
-                <li class="text-white">
-                  210 Wicksteed Ave. Toronto, Ontario M4G 2C3
-                </li>
-                <li class="text-white" style="text-decoration: underline">
-                  <a href="mailto:info@cfrentals.com">info@cfrentals.com</a>
-                </li>
-                <li class="text-white" style="text-decoration: underline">
-                  <a href="tel:416-703-9236">416-703-9236</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <div class="info">
+      <div class="info-text">
+        <span>contemporary Furniture Rentals</span> <br />
+        <span>site down for maintnace, we'll be back soon!</span>
       </div>
-    </footer>
+    </div>
+
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
 
@@ -172,22 +87,5 @@ https://templatemo.com/tm-571-hexashop
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-
-    <script>
-      $(function () {
-        var selectedClass = "";
-        $("p").click(function () {
-          selectedClass = $(this).attr("data-rel");
-          $("#portfolio").fadeTo(50, 0.1);
-          $("#portfolio div")
-            .not("." + selectedClass)
-            .fadeOut();
-          setTimeout(function () {
-            $("." + selectedClass).fadeIn();
-            $("#portfolio").fadeTo(50, 1);
-          }, 500);
-        });
-      });
-    </script>
   </body>
 </html>
