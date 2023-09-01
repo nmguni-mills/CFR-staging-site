@@ -64,7 +64,24 @@ gtag('config', 'G-L541QJGXGG');
       .contact_header {
         padding: 20px;
       }
+      .cfr-home-logo{
+        width: 450px; 
+        margin-left: 90px;
+      }
+
+      .photo1{
+          width: 650px;
+        }
+
+
       @media screen and (max-width: 680px) {
+        .cfr-home-logo{
+          width: 350px;
+          margin-left: 0px;
+        }
+        .main-banner .left-content .inner-content{
+          position: unset;
+        }
         .right-content-mobile {
           display: none;
         }
@@ -75,6 +92,11 @@ gtag('config', 'G-L541QJGXGG');
 
         .left-content-mobile {
           height: 100vh;
+
+          display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
         }
         .cfr-title {
           padding-bottom: 100px;
@@ -82,6 +104,14 @@ gtag('config', 'G-L541QJGXGG');
         iframe {
           width: 100%;
           padding-top: 25px;
+        }
+
+        .photo1{
+          width: 100%;
+        }
+
+        #services{
+          padding: 10px;
         }
       }
     </style>
@@ -170,7 +200,7 @@ gtag('config', 'G-L541QJGXGG');
           <div class="col-lg-6">
             <div class="left-content left-content-mobile">
                 <div class="inner-content">
-              <img style="width: 625px; margin-left: 55px;" src="/assets/images/index/CFR_logo.jpg" alt="">
+              <img class="cfr-home-logo"src="/assets/images/index/CFR_logo.jpg" alt="">
                   <div class="main-border-button">
                     <a href="#">Products</a>
                   </div>
@@ -271,7 +301,7 @@ gtag('config', 'G-L541QJGXGG');
             </div>
           </div>
           <div class="col-lg-6">
-            <img style="width: 650px;" src="/assets/images/products/home/photo1.jpg" alt="" />
+            <img class="photo1" src="/assets/images/products/home/photo1.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -346,7 +376,7 @@ gtag('config', 'G-L541QJGXGG');
             </div>
           </div>
           <div class="col-lg-6">
-            <img style="width: 650px;" src="assets/images/products/home/photo2.jpg" alt="" />
+            <img class="photo1" src="assets/images/products/home/photo2.jpg" alt="" />
           </div>
         </div>
       </div>
