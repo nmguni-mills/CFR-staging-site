@@ -51,7 +51,9 @@ gtag('config', 'G-L541QJGXGG');
 
 
     <style>
-
+.main-banner{
+  padding-top: 100px;
+}
    
       .about-text {
         padding: 10px 0;
@@ -114,7 +116,62 @@ gtag('config', 'G-L541QJGXGG');
           padding: 10px;
         }
       }
+
+
+
+      /* --------------------------- */
+
+      .carousel-item {
+        height: 38rem;
+        background: #000;
+        color: white;
+        position: relative;
+
+        background-position: center;
+        background-size: cover;
+      }
+      .carousel-container{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 50px;
+      }
+
+      
+.overlay-image{
+  position: absolute;
+top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-position: center;
+        background-size: cover;
+        background-color: #000;
+        opacity: .2;
+}
+
+.bg-img-1{
+  background-image:url(/slide-1.jpg);
+
+}
+
+.bg-img-2{
+  background-image:url(/slide-2.jpg);
+
+}
+.bg-img-3{
+  background-image:url(/slide-3.jpg);
+
+}
+.bg-img-4{
+  background-image:url(/slide-4.jpg);
+
+}
+
+      
     </style>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
 
   <body>
@@ -195,73 +252,65 @@ gtag('config', 'G-L541QJGXGG');
 
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner" id="top">
-      <div  style="height: 500px;" class="container-fluid">
+      <div style="height: 38rem;"  class="container-fluid">
 
-        <!-- <div class="row">
-          <div class="col-lg-6">
-            <div class="left-content left-content-mobile">
-                <div class="inner-content">
-              <img class="cfr-home-logo"src="/assets/images/index/CFR_logo.jpg" alt="">
-                  <div class="main-border-button">
-                    <a href="#">Products</a>
-                  </div>
-                </div>
-            </div>
+        <div class="carousel-inner"></div>
+ 
+        <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
           </div>
-          <div class="col-lg-6">
-            <div class="right-content right-content-mobile">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="right-first-image">
-                    <div class="thumb">
-                      <div class="inner-content"></div>
-                      <div>
-                        <div class="inner"></div>
-                      </div>
-                      <img src="assets/images/index/424U1287.jpg" alt="" />
-                    </div>
-                  </div>
+          <div class="carousel-inner">
+
+            
+            <div class="carousel-item bg-img-4" > 
+        
+      
+              <div class="container">
+                <div class="carousel-caption text-start" >
+                  <h1>From start to finish, we are here to assist you in every step of the way.</h1>
+                  <!-- <p><a class="btn btn-lg btn-primary" href="#">Browse products today gallery</a></p> -->
                 </div>
-                <div class="col-lg-6">
-                  <div class="right-first-image">
-                    <div class="thumb">
-                      <div class="inner-content"></div>
-                      <div>
-                        <div class="inner"></div>
-                      </div>
-                      <img src="assets/images/index/424U7733.jpg" alt="" />
-                    </div>
-                  </div>
+              </div>
+              <div class="overlay-image"> 
+              </div>
+            </div>
+
+            <div class="carousel-item active bg-img-2">
+              <div class="container">
+                <div class="carousel-caption">
+               
+                  <h1>Driven by a passion for excellence and a dedication to providing top-tier service.</h1>
+                  <!-- <p><a class="btn btn-lg btn-primary" href="#">Browse products today gallery</a></p> -->
                 </div>
-                <div class="col-lg-6">
-                  <div class="right-first-image">
-                    <div class="thumb">
-                      <div class="inner-content"></div>
-                      <div>
-                        <div class="inner"></div>
-                      </div>
-                      <img
-                        src="/assets/images/index/gold-framed-red plexi-oval-bar.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="right-first-image">
-                    <div class="thumb">
-                      <div class="inner-content"></div>
-                      <div>
-                        <div class="inner"></div>
-                      </div>
-                      <img src="assets/images/index/HuntClub12.jpg" alt="" />
-                    </div>
-                  </div>
+                <div class="overlay-image"> 
                 </div>
               </div>
             </div>
+
+            <div class="carousel-item bg-img-3">
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>Discover the endless possibilities of contemporary event furniture rentals.</h1>
+                  <!-- <p><a class="btn btn-lg btn-primary" href="#">Browse products today gallery</a></p> -->
+                </div>
+                <div class="overlay-image"> 
+              </div>
+            </div>
+            </div>
           </div>
-        </div> -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
       </div>
     </div>
     <!-- ***** Main Banner Area End ***** -->
@@ -481,6 +530,8 @@ gtag('config', 'G-L541QJGXGG');
     </div>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
 
@@ -503,21 +554,6 @@ gtag('config', 'G-L541QJGXGG');
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
-    <script>
-      $(function () {
-        var selectedClass = "";
-        $("p").click(function () {
-          selectedClass = $(this).attr("data-rel");
-          $("#portfolio").fadeTo(50, 0.1);
-          $("#portfolio div")
-            .not("." + selectedClass)
-            .fadeOut();
-          setTimeout(function () {
-            $("." + selectedClass).fadeIn();
-            $("#portfolio").fadeTo(50, 1);
-          }, 500);
-        });
-      });
-    </script>
+ 
   </body>
 </html>
